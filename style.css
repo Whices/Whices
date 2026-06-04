@@ -37,9 +37,7 @@ body {
 
 a { color: inherit; text-decoration: none; }
 
-/* ===========================
-   GRAIN — très léger sur fond clair
-   =========================== */
+
 .grain {
    position: fixed;
    inset: -200%;
@@ -66,9 +64,7 @@ a { color: inherit; text-decoration: none; }
    100% { transform: translate(0,0); }
 }
 
-/* ===========================
-   SCANLINES — subtil sur fond clair
-   =========================== */
+
 .scanlines {
    position: fixed;
    inset: 0;
@@ -83,9 +79,7 @@ a { color: inherit; text-decoration: none; }
    z-index: 9998;
 }
 
-/* ===========================
-   NAVBAR
-   =========================== */
+
 .navbar {
    position: fixed;
    top: 0; left: 0; right: 0;
@@ -196,9 +190,6 @@ a { color: inherit; text-decoration: none; }
    white-space: nowrap;
 }
 
-/* ===========================
-   HEADER
-   =========================== */
 header {
    position: relative;
    min-height: 420px;
@@ -217,7 +208,6 @@ header {
    flex: 1;
 }
 
-/* === GLITCH (version claire) === */
 .glitch {
    position: relative;
    font-family: var(--font-display);
@@ -237,14 +227,14 @@ header {
 }
 
 .glitch span:first-child {
-   color: var(--red);
+   color: #0000;
    animation: glitch-1 3.5s infinite steps(1);
    clip-path: polygon(0 0, 100% 0, 100% 35%, 0 35%);
    opacity: 0;
 }
 
 .glitch span:last-child {
-   color: var(--cyan);
+   color: #0000;
    animation: glitch-2 3.5s infinite steps(1);
    clip-path: polygon(0 65%, 100% 65%, 100% 100%, 0 100%);
    opacity: 0;
@@ -314,7 +304,6 @@ header {
 
 .header-link:hover { border-bottom-color: var(--red); }
 
-/* Deco grid claire */
 .header-deco {
    position: absolute;
    right: 0; top: 0; bottom: 0;
@@ -339,15 +328,9 @@ header {
    inset: 0;
    background: radial-gradient(circle at 70% 50%, var(--red-glow), transparent 60%);
 }
-
-/* ===========================
-   MAIN
-   =========================== */
 main { padding: 0 0 80px; }
 
-/* ===========================
-   SECTION LABELS
-   =========================== */
+
 .section-label {
    font-family: var(--font-mono);
    font-size: 0.62rem;
@@ -369,18 +352,14 @@ main { padding: 0 0 80px; }
 
 .label-num { color: var(--red); font-weight: 700; }
 
-/* ===========================
-   ABOUT SECTION
-   =========================== */
+
 .about-section {
    padding: 60px 60px 40px;
    border-bottom: 1px solid var(--border);
    background: var(--bg);
 }
 
-/* ===========================
-   WINDOW
-   =========================== */
+
 .window {
    background: var(--bg-white);
    border: 1px solid var(--border);
@@ -416,9 +395,11 @@ main { padding: 0 0 80px; }
 
 .win-spacer { width: 52px; }
 
-/* ===========================
-   TABS
-   =========================== */
+
+
+
+
+
 .tabs input { display: none; }
 
 .tabs label {
@@ -553,17 +534,13 @@ main { padding: 0 0 80px; }
 
 .content-link:hover { border-bottom-color: var(--red); }
 
-/* ===========================
-   SKILLS SECTION
-   =========================== */
+
 .skills-section {
    padding: 60px 60px 0;
    background: var(--bg);
 }
 
-/* ===========================
-   CARDS GRID
-   =========================== */
+
 .cards-grid {
    display: grid;
    grid-template-columns: repeat(3, 1fr);
@@ -572,9 +549,8 @@ main { padding: 0 0 80px; }
    border: 1px solid var(--border);
 }
 
-/* ===========================
-   CARD
-   =========================== */
+
+
 .card {
    background: var(--bg-white);
    padding: 28px 24px;
@@ -602,7 +578,7 @@ main { padding: 0 0 80px; }
 .card:hover { background: #faf8f4; }
 .card:hover::before { opacity: 1; }
 
-/* Barre de couleur top sur hover */
+
 .card::after {
    content: '';
    position: absolute;
@@ -651,7 +627,7 @@ main { padding: 0 0 80px; }
    color: var(--text);
 }
 
-/* Card image */
+
 .card-img-wrap {
    width: 100%;
    height: 140px;
@@ -772,9 +748,7 @@ main { padding: 0 0 80px; }
    color: var(--text-dim);
 }
 
-/* ===========================
-   FOOTER
-   =========================== */
+
 footer {
    border-top: 1px solid var(--border);
    padding: 28px 60px;
@@ -852,9 +826,7 @@ footer {
    50%       { opacity: 0.6; box-shadow: 0 0 12px rgba(40,160,72,0.4); }
 }
 
-/* ===========================
-   RESPONSIVE
-   =========================== */
+
 @media (max-width: 1200px) {
    .cards-grid { grid-template-columns: repeat(2, 1fr); }
 }
